@@ -1,8 +1,21 @@
 .Arrow {
-    padding: 2px;
-    border-top: 1px solid red;
-    border-right: 1px solid red;
-    width: 2px;
-    height: 2px;
-    transform: rotate(-135deg);
+  padding: 2px;
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+  width: 2px;
+  height: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.4s;
+}
+.top {
+  transform: rotate(-45deg);
+}
+.down {
+  transform: rotate(135deg);
+}
+.left {
+  transform: rotate(-135deg);
+}
+.right {
+  transform: rotate(45deg);
 }
