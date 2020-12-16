@@ -55,6 +55,7 @@
   list-style: none;
   margin-bottom: 0.8em;
   animation: dropdownn 0.7s forwards ease-in;
+  border-width: 6px 6px 0 6px;
 }
 .onClose {
   position: fixed;
