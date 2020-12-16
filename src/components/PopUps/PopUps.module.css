@@ -1,0 +1,97 @@
+/* .PopUps {
+  top: 64px;
+  background: grey;
+  border: 1px solid black;
+  position: fixed;
+}
+
+.Pop {
+  position: fixed;
+  width: 500px;
+  height: 300px;
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+  filter: blur(0.1px);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+.Pop::after {
+  content: "";
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  left: -25px;
+  right: 0;
+  top: -25px;
+  bottom: 0;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+  filter: blur(10px);
+}
+.div {
+  position: fixed;
+  top: 35vh;
+  left: 45vw;
+}
+.onClose {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  /* z-index: -1000; */
+/* height: 100vh;
+  width: 100vw;
+} */
+.PopUp {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  filter: blur(100px);
+}
+.PopUpWrapper {
+  background-color: aliceblue;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.2rem;
+  z-index: 1000;
+  width: 60%;
+  max-width: 700px;
+  max-height: 30%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+  filter: blur(0.1px);
+}
+
+.PopUpContent {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 0.1px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  /* background-color: rgba(223, 215, 203, 0.459); */
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+  filter: blur(0.1px);
+}

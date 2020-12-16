@@ -1,0 +1,86 @@
+:root {
+  --animation-speed1: 0.1s;
+  --animation-speed2: 1s;
+}
+.Main {
+  font-family: sans-serif;
+  background: #6a6464;
+  height: 100vh;
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image: url(http://bit.ly/2gPLxZ4); */
+  transition: all 0.3s ease-out;
+}
+.Container {
+  width: 10.5em;
+  margin: 0 auto;
+}
+
+.Header {
+  margin-bottom: 0.8em;
+  padding: 0.4em 1em 0.4em 1em;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #3faffa;
+  background: #ffffff;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ListCon {
+  animation: dropdown 0.4s forwards ease-in;
+  /* transition: all 0.3s ease-out; */
+}
+
+.List {
+  padding: 0;
+  margin: 0;
+  padding-left: 1em;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  color: #3faffa;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* animation: dropdown 0.3s forwards ease-in; */
+  /* transition: all 0.3s ease-out; */
+}
+.List:first-child {
+  padding-top: 0.8em;
+}
+.ListItem {
+  list-style: none;
+  margin-bottom: 0.8em;
+  animation: dropdownn 0.7s forwards ease-in;
+}
+.onClose {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  height: 10vh;
+  width: 20vw;
+}
+@keyframes dropdown {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 500px;
+  }
+}
+@keyframes dropdownn {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 25px;
+  }
+}

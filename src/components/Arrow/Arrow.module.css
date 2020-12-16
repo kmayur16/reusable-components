@@ -1,4 +1,4 @@
-.Arrow {
+/* .Arrow {
   padding: 2px;
   border-top: 1px solid red;
   border-right: 1px solid red;
@@ -18,4 +18,16 @@
 }
 .right {
   transform: rotate(45deg);
+} */
+/* :root {
+  --rrotate: 0deg;
+  --arrow-rotate: calc(var(--rrotate));
+} */
+.Arrow {
+  box-sizing: border-box;
+  width: 9px;
+  height: 9px;
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+  transition: transform 1s ease-in;
 }
