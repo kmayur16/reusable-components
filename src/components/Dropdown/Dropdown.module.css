@@ -48,6 +48,8 @@
   font-weight: 500;
   /* animation: dropdown 0.3s forwards ease-in; */
   /* transition: all 0.3s ease-out; */
+  /* max-height: 100vh;
+  overflow-y: auto; */
 }
 .List:first-child {
   padding-top: 0.8em;
