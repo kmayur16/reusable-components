@@ -22,16 +22,16 @@ export default function App() {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(null);
   const [direction, setDirection] = useState(0);
-  //   const ref = useRef(null);
-  //   useEffect(() => {
-  //     document.addEventListener("click", CloseDropdownList);
-  //     return () => document.removeEventListener("click", CloseDropdownList);
-  //   }, []);
+  const ref = useRef(null);
 
-  //   function CloseDropdownList(event) {
-  //     console.log([event.target, ref.current]);
-  //     setOpen(event && event.target === ref.current);
-  //   }
+  function CloseDropdownList(event) {
+    console.log([event.target, ref.current]);
+    setOpen(event && event.target === ref.current);
+  }
+  useEffect(() => {
+    document.addEventListener("click", CloseDropdownList);
+    return () => document.removeEventListener("click", CloseDropdownList);
+  }, []);
 
   useEffect(() => {
     if (open === false) {
@@ -51,7 +51,7 @@ export default function App() {
   return (
     <div className={styles.Main}>
       <div className={styles.Container}>
-        <div className={styles.Header} onClick={toggling}>
+        <div className={styles.Header} onClick={toggling} ref={ref}>
           {selected || "Month"}
           <span>
             <Arrow open={open} direction={direction} />
@@ -59,7 +59,7 @@ export default function App() {
         </div>
         {open && (
           <>
-            <div className={styles.onClose} onClick={() => setOpen(false)} />
+            {/* <div className={styles.onClose} onClick={() => setOpen(false)} /> */}
             <div className={styles.ListCon}>
               <ul className={styles.List}>
                 {options.map((option) => (

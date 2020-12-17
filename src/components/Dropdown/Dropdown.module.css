@@ -32,6 +32,7 @@
 }
 .ListCon {
   animation: dropdown 0.4s forwards ease-in;
+
   /* transition: all 0.3s ease-out; */
 }
 
@@ -41,7 +42,7 @@
   padding-left: 1em;
   background: #ffffff;
   border: 2px solid #e5e5e5;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   color: #3faffa;
   font-size: 1.3rem;
   font-weight: 500;
@@ -59,13 +60,13 @@
 }
 .onClose {
   position: fixed;
-  top: 0;
+  /* top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 0; */
   opacity: 0.5;
   height: 10vh;
-  width: 20vw;
+  width: 10vw;
 }
 @keyframes dropdown {
   from {
